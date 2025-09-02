@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cement Strength Prediction - Result</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #1a3e72 0%, #134075 60%, #0b2249 100%);
+            margin: 0;
+            padding: 50px 40px;
+            color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 20px;
+            padding: 50px 40px;
+            background: linear-gradient(145deg, #225e99, #11305c);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            font-size: 3rem;
+            color: #ffca28;
+            font-weight: 900;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 5px #000000aa;
+        }
+        p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            color: #fffde7;
+        }
+        .strength-value {
+            font-size: 5rem;
+            font-weight: 900;
+            color: #66bb6a;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 3px #000a00cc;
+        }
+        a.button {
+            display: inline-block;
+            padding: 18px 45px;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #134075;
+            background-color: #ffd54f;
+            border-radius: 15px;
+            text-decoration: none;
+            box-shadow: 0 7px 18px #ffa726cc;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        a.button:hover {
+            background-color: #ffca28;
+            box-shadow: 0 10px 25px #ffb300dd;
+            color: #0b2249;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #bbb;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>The predicted cement strength is:</p>
+        <div class="strength-value">{{ final_result }} MPa</div>
+        <a href="/predict" class="button">Make Another Prediction</a>
+        <footer>&COPY; 2025 Cement Strength Predictor</footer>
+    </div>
+</body>
+</html>
